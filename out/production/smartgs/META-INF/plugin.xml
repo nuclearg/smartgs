@@ -7,11 +7,11 @@
     <description><![CDATA[
       Generate Getter/Setters with Javadoc.
 
-      Add a command in [Generate...(Cmd-N)] context menu, which can generate getter/setters with copying javadoc from raw fields.
+      Add a command in "Generate..."[Cmd-N] context menu, which can generate getter/setters with copying javadoc from raw fields.
     ]]></description>
 
     <change-notes><![CDATA[
-        1.1 Why 1.0 could not download! I have to upload a new release. Nothing changed.
+        1.1 Fix for IDEA 16.2
         1.0 Initial
     ]]>
     </change-notes>
@@ -31,6 +31,10 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="SmartGS.GenGS" class="com.github.nuclearg.smartgs.SmartGSAction" text="Getter/Setters with JavaDoc"
+                description="Generate getter/setters with javadoc">
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+        </action>
     </actions>
 
 </idea-plugin>

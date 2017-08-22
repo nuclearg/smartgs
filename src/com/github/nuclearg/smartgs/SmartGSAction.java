@@ -81,4 +81,5 @@ public class SmartGSAction extends BaseGenerateAction {
 
         });
     }
+
 }
