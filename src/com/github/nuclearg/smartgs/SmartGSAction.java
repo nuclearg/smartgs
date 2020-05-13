@@ -9,6 +9,7 @@ import com.intellij.psi.*;
 import com.intellij.psi.javadoc.PsiDocComment;
 import com.intellij.psi.javadoc.PsiDocToken;
 import com.intellij.util.IncorrectOperationException;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
 public class SmartGSAction extends BaseGenerateAction {
     public SmartGSAction() {
         super(new GenerateGetterAndSetterHandler() {
+            @Override
             public GenerationInfo[] generateMemberPrototypes(PsiClass aClass, ClassMember original) throws IncorrectOperationException {
                 try {
                     List<GenerationInfo> methods = new ArrayList<>();
@@ -38,13 +40,16 @@ public class SmartGSAction extends BaseGenerateAction {
                 }
             }
 
+            @Override
+            protected boolean hasMembers(@NotNull PsiClass aClass) {
+                return true;
+            }
 
             private GenerationInfo buildGetter(PsiFieldMember fieldMember) {
                 GenerationInfo generationInfo = fieldMember.generateGetter();
                 insertJavaDoc(fieldMember.getElement(), generationInfo);
                 return generationInfo;
             }
-
 
             private GenerationInfo buildSetter(PsiFieldMember fieldMember) {
                 GenerationInfo generationInfo = fieldMember.generateSetter();
@@ -53,7 +58,7 @@ public class SmartGSAction extends BaseGenerateAction {
             }
 
             private void insertJavaDoc(PsiField field, GenerationInfo generationInfo) {
-                if (generationInfo == null)
+                if (generationInfo == null || generationInfo.getPsiMember() == null)
                     return;
 
                 String javadoc;
@@ -75,10 +80,8 @@ public class SmartGSAction extends BaseGenerateAction {
 
                 PsiElementFactory elementFactory = JavaPsiFacade.getElementFactory(field.getProject());
                 PsiDocComment javadocElement = elementFactory.createDocCommentFromText(javadoc);
-
                 generationInfo.getPsiMember().addBefore(javadocElement, generationInfo.getPsiMember().getFirstChild());
             }
-
         });
     }
 
