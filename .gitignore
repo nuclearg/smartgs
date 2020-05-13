@@ -1,12 +1,29 @@
+target
 *.class
+*.log
+*.swp
+*.bak
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+hsf.configuration/
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Eclipse
+.classpath
+.project
+.settings/
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Maven
+log/
+target/
+dependency-reduced-pom.xml
