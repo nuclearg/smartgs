@@ -15,7 +15,6 @@ hsf.configuration/
 .settings/
 
 # Intellij
-.idea/
 *.iws
 
 # Mac
