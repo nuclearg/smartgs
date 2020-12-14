@@ -4,6 +4,7 @@ target
 *.swp
 *.bak
 *.jar
+out/
 
 hsf/
 hsf.configuration/
@@ -15,7 +16,6 @@ hsf.configuration/
 
 # Intellij
 .idea/
-*.iml
 *.iws
 
 # Mac
