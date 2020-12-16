@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 class SmartGSHandler extends GenerateGetterAndSetterHandler {
-    private static final String PLACEHOLDER = "#PLACEHOLDER_JAVADOC#";
+    private static final String PLACEHOLDER = "#JAVADOC_PLACEHOLDER#";
 
     SmartGSHandler() {
         super();
@@ -36,8 +36,8 @@ class SmartGSHandler extends GenerateGetterAndSetterHandler {
         }
 
         JPanel javadocPanel = new JPanel(new BorderLayout(2, 2));
-        javadocPanel.add(getHeaderPanel(project, SmartGetterTemplateManager.getInstance(), "Getter Javadoc"), "North");
-        javadocPanel.add(getHeaderPanel(project, SmartSetterTemplateManager.getInstance(), "Setter Javadoc"), "South");
+        javadocPanel.add(getHeaderPanel(project, SmartGetterTemplateManager.getInstance(), "Getter Javadoc:"), "North");
+        javadocPanel.add(getHeaderPanel(project, SmartSetterTemplateManager.getInstance(), "Setter Javadoc:"), "South");
 
         JPanel container = new JPanel(new BorderLayout(2, 2));
         container.add(originalPanel, "North");

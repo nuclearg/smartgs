@@ -11,18 +11,18 @@
     ]]></description>
 
     <change-notes><![CDATA[
-        <p>1.2 ~2020.12</p>
+        <p>v1.2 ~2020.12</p>
         <ul>
         <li>Fix for IDEA 2020.3</li>
-        <li>Add simple javadoc template support.</li>
+        <li>Add simple template support.</li>
         </ul>
-        <p>1.1 ~2017.08</p>
+        <p>v1.1 ~2017.08</p>
         <ul>
         <li>Fix for IDEA 16.2</li>
         </ul>
-        <p>1.0 ~2015.10</p>
+        <p>v1.0 ~2015.10</p>
         <ul>
-        <li>Initial</li>
+        <li>Initial version</li>
         </ul>
     ]]>
     </change-notes>

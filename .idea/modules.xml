@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/smartgs.iml" filepath="$PROJECT_DIR$/.idea/smartgs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartgs.iml" filepath="$PROJECT_DIR$/smartgs.iml" />
     </modules>
   </component>
 </project>
