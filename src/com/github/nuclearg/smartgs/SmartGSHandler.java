@@ -17,7 +17,6 @@ import org.jetbrains.java.generate.template.TemplatesManager;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 class SmartGSHandler extends GenerateGetterAndSetterHandler {
@@ -47,8 +46,12 @@ class SmartGSHandler extends GenerateGetterAndSetterHandler {
 
     @Override
     protected boolean hasMembers(@NotNull PsiClass psiClass) {
-        return Arrays.stream(psiClass.getFields())
-                .anyMatch(this::isGetterOrSetterAvailable);
+        for (PsiField psiField : psiClass.getFields()) {
+            if (this.isGetterOrSetterAvailable(psiField)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
@@ -61,16 +64,16 @@ class SmartGSHandler extends GenerateGetterAndSetterHandler {
         PsiField psiField = psiFieldMember.getElement();
 
         try {
-            List<GenerationInfo> methods = new ArrayList<>();
+            List<GenerationInfo> methods = new ArrayList<GenerationInfo>();
 
             GenerationInfo getter = null;
             GenerationInfo setter = null;
 
             if (this.isGetterAvailable(psiField)) {
-                getter = this.buildGetter(psiFieldMember);//myGenerateGetterHandler.generateMemberPrototypes(psiClass, original);
+                getter = this.buildGetter(psiFieldMember);
             }
             if (this.isSetterAvailable(psiField)) {
-                setter = this.buildSetter(psiFieldMember);// myGenerateSetterHandler.generateMemberPrototypes(psiClass, original);
+                setter = this.buildSetter(psiFieldMember);
             }
 
             if (getter != null) {

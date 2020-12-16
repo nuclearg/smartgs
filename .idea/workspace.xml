@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766840a9-b641-4e2c-ba56-bdd607052367" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/nuclearg/smartgs/SomeBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/smartgs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/nuclearg/smartgs/SmartGSHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/nuclearg/smartgs/SmartGSHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/nuclearg/smartgs/defaultGetterJavadoc.vm" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/nuclearg/smartgs/defaultGetterJavadoc.vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/nuclearg/smartgs/defaultSetterJavadoc.vm" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/nuclearg/smartgs/defaultSetterJavadoc.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/nuclearg/smartgs/SomeBean.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +53,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">

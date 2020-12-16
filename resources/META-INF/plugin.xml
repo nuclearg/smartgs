@@ -43,7 +43,6 @@
         <!-- Add your actions here -->
         <action id="SmartGS.GenGS" class="com.github.nuclearg.smartgs.SmartGSAction" text="Getter/Setters with JavaDoc"
                 description="Generate getter/setters with javadoc">
-            <!--            <add-to-group group-id="GenerateGroup" anchor="first"/>-->
             <add-to-group group-id="GenerateGroup" anchor="first"/>
         </action>
     </actions>
