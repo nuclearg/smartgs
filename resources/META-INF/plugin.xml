@@ -11,7 +11,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-        <p>v1.2 ~2020.12</p>
+        <p>v1.3 ~2020.12</p>
         <ul>
         <li>Fix for IDEA 2020.3, but IDEA older than 20.2 are no longer supported because of a break API change.</li>
         <li>Add simple template support.</li>
