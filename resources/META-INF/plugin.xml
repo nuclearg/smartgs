@@ -13,7 +13,7 @@
     <change-notes><![CDATA[
         <p>v1.2 ~2020.12</p>
         <ul>
-        <li>Fix for IDEA 2020.3</li>
+        <li>Fix for IDEA 2020.3, but IDEA older than 20.2 are no longer supported because of a break API change.</li>
         <li>Add simple template support.</li>
         </ul>
         <p>v1.1 ~2017.08</p>
@@ -28,11 +28,10 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="162"/>
+    <idea-version since-build="202.5103.13"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html on how to target different products -->
     <depends>com.intellij.modules.java</depends>
-    <depends>com.intellij.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.nuclearg.smartgs.SmartGetterTemplateManager"/>

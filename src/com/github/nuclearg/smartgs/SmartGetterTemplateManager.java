@@ -21,8 +21,8 @@ public class SmartGetterTemplateManager extends TemplatesManager {
         return ServiceManager.getService(SmartGetterTemplateManager.class);
     }
 
-    @Override
     @NotNull
+    @Override
     public List<TemplateResource> getDefaultTemplates() {
         try {
             return Collections.singletonList(new TemplateResource("Default", readFile("defaultGetterJavadoc.vm", SmartGetterTemplateManager.class), true));
